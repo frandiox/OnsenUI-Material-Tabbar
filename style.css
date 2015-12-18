@@ -8,6 +8,10 @@
   padding-left: 16px;
 }
 
+.all-contacts .list__item__thumbnail {
+  margin-right: 16px;
+}
+
 ons-fab {
   z-index: 1000;
 }

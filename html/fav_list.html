@@ -1,4 +1,4 @@
-<ons-page>
+<ons-page modifier="material">
   <ons-list modifier="material" class="fav-list" ng-controller="FavouritesController">
     <ons-list-header modifier="material" class="header-text">Frequent Contacts</ons-list-header>
     <ons-list-item modifier="material" ng-repeat="person in list | orderBy: person as orderedList" ng-click="myNavigator.pushPage('html/details_contact.html', {animation: 'lift', person: person})">
