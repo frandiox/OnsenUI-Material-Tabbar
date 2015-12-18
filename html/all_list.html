@@ -11,7 +11,7 @@
       </div>
     </ons-list-item>
 
-    <ons-list-item modifier="material" ng-repeat="person in list | orderBy: person as orderedList" ng-click="myNavigator.pushPage('html/detailsContact.html', {animation: 'lift', person: person})">
+    <ons-list-item modifier="material" ng-repeat="person in list | orderBy: person as orderedList" ng-click="myNavigator.pushPage('html/details_contact.html', {animation: 'lift', person: person})">
       <div class="list__item__left">
         <span ng-show="$first || person.charAt(0) !== orderedList[$index - 1].charAt(0)" class="contact-initials">{{::person.charAt(0)}}</span>
       </div>
