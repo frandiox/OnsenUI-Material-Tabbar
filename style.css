@@ -4,11 +4,15 @@
   font-size: 20px;
 }
 
-.all-contacts.list__item__center {
+.all-contacts-list {
+  padding-top: 12px;
+}
+
+.all-contacts-list .list__item__center {
   padding-left: 16px;
 }
 
-.all-contacts .list__item__thumbnail {
+.all-contacts-list .list__item__thumbnail {
   margin-right: 16px;
 }
 

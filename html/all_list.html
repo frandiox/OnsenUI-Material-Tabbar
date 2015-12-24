@@ -1,10 +1,10 @@
 <ons-page modifier="material">
-  <ons-list modifier="material" ng-controller="ContactListController">
+  <ons-list modifier="material" ng-controller="ContactListController" class="all-contacts-list">
     <ons-list-item modifier="material" ng-click="myNavigator.pushPage('html/details_contact.html', {animation: 'lift', person: 'Dave Graham'})">
       <div class="list__item__left">
         <span class="contact-initials">Me</span>
       </div>
-      <div class="list__item__center all-contacts">
+      <div class="list__item__center">
         <ons-ripple color="rgba(0, 0, 0, 0.1)"></ons-ripple>
         <img ng-src="images/profile-image-08.png" class="list__item__thumbnail">
         <div>Dave Graham</div>
@@ -15,7 +15,7 @@
       <div class="list__item__left">
         <span ng-show="$first || person.charAt(0) !== orderedList[$index - 1].charAt(0)" class="contact-initials">{{::person.charAt(0)}}</span>
       </div>
-      <div class="list__item__center all-contacts">
+      <div class="list__item__center">
         <ons-ripple color="rgba(0, 0, 0, 0.1)"></ons-ripple>
         <img ng-src="images/profile-image-0{{ $index % 9 + 1 }}.png" class="list__item__thumbnail">
         <div>{{::person}}</div>
