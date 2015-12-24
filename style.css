@@ -25,7 +25,6 @@ ons-fab {
   margin: 12px 8px 12px 8px;
   border: 1px solid #ddd;
   border-top: none;
-  -webkit-border-radius: 4px;
   border-radius: 2px;
   background-image: none;
   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.33);
@@ -115,5 +114,6 @@ ons-material-input {
 }
 
 .text-input--material:focus {
+  background-image: -webkit-linear-gradient(#2196F3, #2196F3), -webkit-linear-gradient(bottom, transparent 1px, #afafaf  1px);
   background-image: linear-gradient(#2196F3, #2196F3), linear-gradient(to top, transparent 1px, #afafaf  1px);
 }
