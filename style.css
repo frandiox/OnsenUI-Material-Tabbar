@@ -28,15 +28,19 @@ ons-fab {
 }
 
 .contact-list-background-color {
-  background-color: #0091EA;;
+  background-color: #2196F3;
 }
 
 .contact-list-background-color:active {
-  background-color: #0091EA;;
+  background-color: #2196F3;
 }
 
 .contact-list-background-color ons-toolbar-button:active {
-  background-color: #0091EA;
+  background-color: #64B5F6;
+}
+
+.contact-list-background-color ons-back-button:active {
+  background-color: #64B5F6;
 }
 
 .fav-list {
@@ -46,17 +50,65 @@ ons-fab {
 .header-text {
   font-weight: 700;
   font-size: 22px;
-  color: #0091EA;
+  color: #2196F3;
 }
 
 .list__item__icon, .details-color {
-  color: #7CB342;
+  color: #8BC34A;
 }
 
 .details-background-color {
-  background-color: #7CB342;
+  background-color: #8BC34A;
 }
 
 .details-background-color ons-toolbar-button:active {
-  background-color: #7CB342;
+  background-color: #AED581;
+}
+
+.details-background-color ons-back-button:active {
+  background-color: #AED581;
+}
+
+.input_list > ons-list-item ons-icon {
+  font-size: 24px;
+  color: #616161;
+}
+
+.input_list .list__item__left {
+  display: block;
+}
+
+.picture {
+  width: 60px;
+  height: 60px;
+  background-color: #BDBDBD;
+  display: table;
+}
+
+.picture > ons-icon {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fafafa !important;
+  font-size: 36px !important;
+}
+
+.change-button {
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  margin-left: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.17), 0 1px 2px rgba(0,0,0,0.29);
+  text-align: center;
+  position: absolute;
+}
+
+.change-button > span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+ons-material-input {
+  width: 90%;
 }
