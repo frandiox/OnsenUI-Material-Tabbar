@@ -5,12 +5,10 @@
 	<title>Onsen UI Material TabBar</title>
 
   <script src="lib/onsen/js/onsenui.min.js"></script>
-  <script src="lib/onsen/js/angular/angular.min.js"></script>
-  <script src="lib/onsen/js/angular-onsenui.min.js"></script>
 
-  <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="js/app.js"></script>
 
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
@@ -18,8 +16,8 @@
 </head>
 
 <body>
-  <ons-navigator var="myNavigator">
-    <ons-page modifier="material">
+  <ons-navigator id="myNavigator">
+    <ons-page modifier="material" _muted>
       <ons-toolbar modifier="material noshadow" class="contact-list-background-color">
         <div class="center">Contacts</div>
         <div class="right">
@@ -32,7 +30,7 @@
         </div>
       </ons-toolbar>
 
-      <ons-fab position="right bottom" class="contact-list-background-color" ng-click="myNavigator.pushPage('html/add_contact.html', {animation: 'fade', animationOptions: {duration: 0.2, delay: 0.2, timing: linear}})">
+      <ons-fab position="right bottom" class="contact-list-background-color" onclick="document.querySelector('#myNavigator').pushPage('html/add_contact.html', {animation: 'fade', animationOptions: {duration: 0.2, delay: 0.2, timing: 'linear'}})">
         <ons-ripple></ons-ripple>
         <ons-icon icon="md-account-add"></ons-icon>
       </ons-fab>

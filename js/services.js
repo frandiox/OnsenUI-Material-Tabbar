@@ -1,7 +1,35 @@
-app.factory('ContactsFactory', function() {
-  return {
-    list:
-    [
+ons.myApp = {};
+
+ons.myApp.createAllListItem = function(name, index, initials) {
+
+    return '<ons-list-item modifier="material" onclick="document.querySelector(\'#myNavigator\').pushPage(\'html/details_contact.html\', {animation: \'lift\', person: \'' + name + '\'})">' +
+          '<div class="list__item__left">' +
+             '<span class="contact-initials">' + initials + '</span>' +
+          '</div>' +
+          '<div class="list__item__center">' +
+            '<ons-ripple color="rgba(0, 0, 0, 0.1)"></ons-ripple>' +
+            '<img src="images/profile-image-0' + (index % 9 + 1) + '.png" class="list__item__thumbnail">' +
+            '<div>' + name + '</div>' +
+          '</div>' +
+        '</ons-list-item>'
+    ;
+};
+
+ons.myApp.createFavListItem = function(name, index) {
+
+    return '<ons-list-item modifier="material" onclick="document.querySelector(\'#myNavigator\').pushPage(\'html/details_contact.html\', {animation: \'lift\', person: \'' + name + '\'})">' +
+          '<ons-ripple color="rgba(0, 0, 0, 0.1)"></ons-ripple>' +
+          '<div class="list__item__left">' +
+            '<img src="images/profile-image-0' + (index % 9 + 1) + '.png" class="list__item__thumbnail">' +
+          '</div>' +
+          '<div class="list__item__center">' +
+            name +
+          '</div>' +
+        '</ons-list-item>'
+    ;
+};
+
+ons.myApp.myData = [
     'Jody Moran',
     'Terri  Stewart',
     'Mona Roberts',
@@ -103,6 +131,4 @@ app.factory('ContactsFactory', function() {
     'Francisco  Lynch',
     'Sonya  Mendez'
 
-    ]
-  }
-});
+];

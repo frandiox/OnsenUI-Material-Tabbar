@@ -1,14 +1,5 @@
-<ons-page modifier="material">
-  <ons-list modifier="material" class="fav-list" ng-controller="FavouritesController">
+<ons-page id="fav_contacts" modifier="material">
+  <ons-list modifier="material" class="fav-list">
     <ons-list-header modifier="material" class="header-text">Frequent Contacts</ons-list-header>
-    <ons-list-item modifier="material" ng-repeat="person in list | orderBy: person as orderedList" ng-click="myNavigator.pushPage('html/details_contact.html', {animation: 'lift', person: person})">
-      <ons-ripple color="rgba(0, 0, 0, 0.1)"></ons-ripple>
-      <div class="list__item__left">
-        <img ng-src="images/profile-image-0{{ $index + 1 }}.png" class="list__item__thumbnail">
-      </div>
-      <div class="list__item__center">
-        {{::person}}
-      </div>
-    </ons-list-item>
   </ons-list>
 </ons-page>
